@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  /* ExtraBold = 800 */
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  backdrop-filter: blur(14px);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1),
+    rgba(74.375, 40.162498474121094, 0, 1) 100%
+  );
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+header .logo {
+  font-weight: 800;
+  font-size: 29px;
+  text-transform: uppercase;
+}
+
+header nav {
+  width: 50%;
+}
+
+header nav ul {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  z-index: 2;
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  color: #fff;
+}
+
+header nav ul li.active::after {
+  display: block;
+  position: relative;
+  top: 5px;
+  left: -15px;
+  border-radius: 10px;
+  background: rgba(250, 144, 33, 1);
+  width: 40px;
+  height: 5px;
+  content: "";
+}
+
+header nav ul li:not(.active):not(.btn) a:hover {
+  border-bottom: 5px solid rgba(220, 112, 0, 1);
+}
+
+header nav ul li.btn a {
+  display: inline-block;
+  transition: all 500ms ease;
+  border-radius: 6px;
+  background: rgba(250, 144, 33, 1);
+  padding: 9px 17px;
+}
+
+header nav ul li.btn a:hover {
+  background: #a02604;
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 100px;
+}
+
+.hero--info {
+  padding-top: 70px;
+  width: 530px;
+}
+
+.hero--info h2 {
+  color: rgba(232, 125, 14, 1);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.hero--info h1 {
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.hero--info p {
+  margin: 30px 0;
+  font-weight: 500;
+  line-height: 170%;
+}
+
+.hero--info .btn {
+  transition: all 500ms ease;
+  border: 0;
+  border-radius: 40px;
+  background: rgba(250, 131, 5, 1);
+  padding: 15px 30px;
+  color: #fff;
+}
+
+.hero--info .btn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.hero img {
+  position: absolute;
+  top: -150px;
+  right: -120px;
+}
+
+/* секция изображения */
+.trending {
+  padding-top: 57px;
+}
+
+.trending h3 {
+  font-weight: 600;
+  font-size: 31px;
+}
+
+.trending .see-all {
+  display: block;
+  float: right;
+  transition: all 500ms ease;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background: black;
+  padding: 12px 23px;
+  color: #fff;
+}
+
+.trending .see-all:hover {
+  transform: scale(1.1);
+}
+
+.trending .games {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  width: 100%;
+}
+
+.trending .games span {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.trending .games span img {
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
+}
+
+.big-text {
+  padding: 50px 0;
+  width: 800px;
+  font-weight: 600;
+  font-size: 35px;
+  text-align: center;
+}
+
+.banner {
+  padding: 67px 0;
+}
+
+.banner h3 {
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.banner p {
+  margin-bottom: 30px;
+  width: 550px;
+  line-height: 170%;
+}
+
+.banner img {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+/* блок features------- */
+
+.features {
+  background: url(/img/Rectangle\ .png) no-repeat center center fixed;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+.features h3,
+.features p {
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.features h3 {
+  font-size: 30px;
+}
+
+.features .info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.features .info .block {
+  text-align: center;
+  margin: 30px 2%;
+  width: 20%;
+}
