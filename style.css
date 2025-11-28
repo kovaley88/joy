@@ -249,3 +249,7 @@ header nav ul li.btn a:hover {
   margin: 30px 2%;
   width: 20%;
 }
+
+.features .info .block img {
+  margin-bottom: 15px;
+}
