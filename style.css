@@ -28,6 +28,7 @@ img {
     rgba(74.375, 40.162498474121094, 0, 1) 100%
   );
   width: 100%;
+  overflow-x: hidden;
 }
 
 .container {
@@ -124,7 +125,8 @@ header nav ul li.btn a:hover {
   line-height: 170%;
 }
 
-.hero--info .btn {
+.hero--info .btn,
+.hero-about .info .btn {
   transition: all 500ms ease;
   border: 0;
   border-radius: 40px;
@@ -133,7 +135,8 @@ header nav ul li.btn a:hover {
   color: #fff;
 }
 
-.hero--info .btn:hover {
+.hero--info .btn:hover,
+.hero-about .info .btn:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
@@ -349,6 +352,73 @@ header nav ul li.btn a:hover {
   transform: scale(1.1);
   cursor: pointer;
   background: #a02604;
+}
+/* -----------about us-------------- */
+.hero-about {
+  position: relative;
+}
+
+.hero-about .info {
+  width: 500px;
+  padding: 250px 0;
+}
+
+.hero-about .info h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.hero-about .info .btn {
+  margin-top: 15px;
+}
+
+.hero-about img {
+  position: absolute;
+  right: -150px;
+  top: 0;
+}
+
+.work {
+  padding: 80px 0;
+}
+
+.work h2 {
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+
+.work .blocks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work .blocks .block {
+  width: 30%;
+  border-radius: 10px;
+  padding: 50px 35px;
+  background: #1c140f;
+}
+
+.work .blocks .block h3 {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.badge {
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.purple {
+  background: #b000dc;
+}
+
+.brown {
+  background: #dc4200;
+}
+
+.green {
+  background: #083f2b;
 }
 
 /* Блок footer */
